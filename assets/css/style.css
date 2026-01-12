@@ -108,10 +108,11 @@ html,body{
 .bd-time {
     font-size: 14px;
     font-weight: 600;
-    color: #d92cf9 !important; /* bright pink for visibility */
+    color: #d92cf9 !important; /* bright pink */
+    opacity: 1 !important;     /* fully visible */
     margin-left: 15px;
-    opacity: 1 !important;       /* ensure fully visible */
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6); /* subtle shadow to pop against background */
+    text-shadow: 0 0 3px rgba(0,0,0,0.6); /* subtle shadow */
+    display: inline-block;
 }
 
 /* Optional: slightly animate the time */
