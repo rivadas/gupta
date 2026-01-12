@@ -106,11 +106,10 @@ html,body{
 }
 /* Bangladesh time display */
 .bd-time {
-    margin-left: 15px;
     font-size: 14px;
-    color: #d92cf9;
+    color: #fff;
+    margin-left: 20px;
     opacity: 0.85;
-    font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -181,40 +180,87 @@ nav.navbar.bootsnav {
 /*.navbar-brand*/
 
 /*.nav li*/
-nav.navbar.bootsnav ul.nav > li > a {
-    font-size: 16px;
-    font-weight: 400;
-    text-transform:uppercase;
-    -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
-    -ms-transition: 0.3s linear; 
-    -o-transition: 0.3s linear; 
-    transition: 0.3s linear;
+/*========== Navbar Brand: RIVA ==========*/
+.navbar-brand {
+    font-family: 'Great Vibes', cursive; /* Calligraphic font */
+    font-size: 36px;
+    color: #d92cf9;
+    text-transform: none;
+    text-shadow: 0 0 8px #d92cf9, 0 0 16px #b636ff;
+    animation: pulseGlow 2s infinite alternate;
+    transition: all 0.3s ease-in-out;
 }
-/* Reduce vertical space in navbar items */
-nav.navbar.bootsnav ul.nav > li > a {
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 15px 20px; /* smaller top/bottom padding */
-    line-height: 1.2;   /* optional: makes it more compact */
-    -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
-    -ms-transition: 0.3s linear; 
-    -o-transition: 0.3s linear; 
-    transition: 0.3s linear;
-}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
 
-nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
-    content: "";
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 8px #d92cf9, 0 0 16px #b636ff;
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: 0 0 16px #d92cf9, 0 0 32px #b636ff;
+        transform: scale(1.05);
+    }
+    100% {
+        text-shadow: 0 0 8px #d92cf9, 0 0 16px #b636ff;
+        transform: scale(1);
+    }
 }
-nav.navbar.bootsnav ul.nav > li.dropdown span {
-    font-size: 8px;
-    margin-left: 15px;
+
+/*========== Navbar Links ==========*/
+nav.navbar.bootsnav ul.nav > li > a {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 30px 18px;
+    transition: 0.3s linear;
+    color: #6a708e;
 }
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+
+nav.navbar.bootsnav ul.nav > li > a:hover,
+nav.navbar.bootsnav ul.nav > li > a:focus,
+nav.navbar.bootsnav ul.nav > li.active > a {
+    color: #d92cf9;
+}
+
+/*========== Dropdown Menu ==========*/
+nav.navbar.bootsnav ul.nav > li.dropdown > ul.dropdown-menu {
+    background: #fff;
+    border: 1px solid #d92cf9;
+    padding: 10px 0;
+    min-width: 180px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+nav.navbar.bootsnav ul.nav > li.dropdown > ul.dropdown-menu > li > a {
+    color: #6a708e;
+    padding: 10px 20px;
+    text-transform: none;
+    transition: 0.3s;
+}
+
+nav.navbar.bootsnav ul.nav > li.dropdown > ul.dropdown-menu > li > a:hover {
+    color: #fff;
+    background: #d92cf9;
+}
+
+/*========== Sticky Navbar ==========*/
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {
+    color: #6a708e;
+}
+
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active > a {
+    color: #d92cf9;
+}
+
+/*========== Bangladesh Time ==========*/
+.bd-time {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 20px;
+    opacity: 0.85;
+}
 /*.nav li*/
 
 
