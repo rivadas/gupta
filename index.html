@@ -37,7 +37,11 @@
 		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
         
         <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Calligraphic Font for RIVA -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<!-- Bootsnav, Bootstrap & Font Awesome should already be included -->
+<link rel="stylesheet" href="assets/css/style.css">
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
@@ -59,57 +63,47 @@
 		
 		<!-- top-area Start -->
 <header class="top-area">
-    <div class="header-area">
-        <!-- Start Navigation -->
-        <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+        <div class="container">
 
-            <div class="container">
-
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand brand-glow" href="index.html">RIVA</a>
-
-                    <!-- Bangladesh Time -->
-                    <span id="bdTime" class="bd-time"></span>
-                </div>
-                <!-- End Header Navigation -->
-
-                <!-- Menu -->
-                <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-
-                        <li class="smooth-menu"><a href="#education">education</a></li>
-                        <li class="smooth-menu"><a href="#skills">skills</a></li>
-                        <li class="smooth-menu"><a href="#experience">experience</a></li>
-                        <li class="smooth-menu"><a href="#profile">profile</a></li>
-                        <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-
-                        <!-- Professional Link Dropdown -->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Professional Link <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
-                                <li><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
-                                <li><a href="https://www.researchgate.net/" target="_blank">ResearchGate</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="smooth-menu"><a href="#clients">organization</a></li>
-                        <li class="smooth-menu"><a href="#contact">contact</a></li>
-
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">RIVA</a>
+                <span id="bd-time" class="bd-time"></span> <!-- Bangladesh Time -->
             </div>
-        </nav>
-        <!-- End Navigation -->
-    </div>
+            <!-- End Header Navigation -->
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="smooth-menu active"><a href="#home">Home</a></li>
+                    <li class="smooth-menu"><a href="#education">Education</a></li>
+                    <li class="smooth-menu"><a href="#skills">Skills</a></li>
+                    <li class="smooth-menu"><a href="#experience">Experience</a></li>
+
+                    <!-- Dropdown Example -->
+                    <li class="smooth-menu dropdown">
+                        <a href="#professional" class="dropdown-toggle" data-toggle="dropdown">Professional Link <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#link1">Link 1</a></li>
+                            <li><a href="#link2">Link 2</a></li>
+                            <li><a href="#link3">Link 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="smooth-menu"><a href="#profile">Profile</a></li>
+                    <li class="smooth-menu"><a href="#portfolio">Portfolio</a></li>
+                    <li class="smooth-menu"><a href="#clients">Organization</a></li>
+                    <li class="smooth-menu"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 </header>
 <!-- top-area End -->
 	
