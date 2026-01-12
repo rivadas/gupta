@@ -104,6 +104,23 @@ html,body{
     position: relative;
     z-index: 9999;
 }
+/* Bangladesh time display */
+.bd-time {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .bd-time {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+}
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
     background-color: #fff;
