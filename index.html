@@ -1113,56 +1113,23 @@
 		
         
         <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-		<script>
-function updateBDTime() {
+        <script>
+function updateBangladeshTime() {
     const options = {
         timeZone: 'Asia/Dhaka',
+        hour12: true,          // true for 12h format, false for 24h
         hour: '2-digit',
         minute: '2-digit',
-        second: '2-digit',
-        hour12: true
+        second: '2-digit'
     };
 
     const now = new Date().toLocaleTimeString('en-US', options);
-    document.getElementById('bd-time').innerHTML = `Bangladesh Time: ${now}`;
+    document.getElementById('bdTime').textContent = "Bangladesh Time: " + now;
 }
 
-updateBDTime();
-setInterval(updateBDTime, 1000);
-</script>
-
-      <script>
-function updateBangladeshTime() {
-    const options = { timeZone: 'Asia/Dhaka', hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit' };
-    const now = new Intl.DateTimeFormat('en-US', options).format(new Date());
-    document.getElementById('bdTime').textContent = 'Bangladesh Time: ' + now;
-}
-setInterval(updateBangladeshTime, 1000); // updates every second
-updateBangladeshTime(); // initialize immediately
-</script>
-  <script>
-function updateBangladeshTime() {
-    const bdTimeElement = document.getElementById('bdTime');
-    if (!bdTimeElement) return;
-
-    const now = new Date();
-
-    // Convert to Bangladesh time (UTC+6)
-    const utc = now.getTime() + now.getTimezoneOffset() * 60000;
-    const bdOffset = 6 * 60 * 60000; // 6 hours in ms
-    const bdTime = new Date(utc + bdOffset);
-
-    // Format: YYYY-MM-DD HH:MM:SS
-    const options = { hour12: false };
-    const formattedTime = bdTime.toLocaleString('en-GB', options);
-
-    bdTimeElement.textContent = formattedTime;
-}
-
-// Update every second
-setInterval(updateBangladeshTime, 1000);
+// Initialize and update every second
 updateBangladeshTime();
+setInterval(updateBangladeshTime, 1000);
 </script>
 
     </body>
