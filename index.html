@@ -919,56 +919,81 @@
 
 
 		<!--clients start -->
-		<section id="clients" class="clients">
-			<div class="section-heading text-center">
-				<h2>organization</h2>
-			</div>
-			<div class="clients-area">
-				<div class="container">
-					<div class="owl-carousel owl-theme" id="client">
-						<div class="item">
-							<a href="https://ccdbbd.org/">
-								<img src="assets/images/clients/c1.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="https://ccdbclimatecentre.com/">
-								<img src="assets/images/clients/c2.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="https://blfbd.com/">
-								<img src="assets/images/clients/c3.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="https://coady.stfx.ca/">
-								<img src="assets/images/clients/c4.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="https://www.rongdhonufoundation.org/">
-								<img src="assets/images/clients/c5.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="https://cu.ac.bd/">
-								<img src="assets/images/clients/c6.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="https://ymcabangladesh.org/">
-								<img src="assets/images/clients/c7.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-					</div><!--/.owl-carousel-->
-				</div><!--/.container-->
-			</div><!--/.clients-area-->
+<section id="clients" class="clients">
+    <div class="section-heading text-center">
+        <h2>Organization</h2>
+    </div>
+    <div class="clients-area">
+        <div class="container">
+            <div class="owl-carousel owl-theme" id="client">
+                <div class="item">
+                    <a href="https://ccdbbd.org/">
+                        <img src="assets/images/clients/c1.png" alt="brand-image" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://ccdbclimatecentre.com/">
+                        <img src="assets/images/clients/c2.png" alt="brand-image" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://blfbd.com/">
+                        <img src="assets/images/clients/c3.png" alt="brand-image" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://coady.stfx.ca/">
+                        <img src="assets/images/clients/c4.png" alt="brand-image" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.rongdhonufoundation.org/">
+                        <img src="assets/images/clients/c5.png" alt="brand-image" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://cu.ac.bd/">
+                        <img src="assets/images/clients/c6.png" alt="brand-image" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://ymcabangladesh.org/">
+                        <img src="assets/images/clients/c7.png" alt="brand-image" />
+                    </a>
+                </div>
+            </div><!--/.owl-carousel-->
+        </div><!--/.container-->
+    </div><!--/.clients-area-->
+</section><!--/.clients-->
+<!--clients end -->
 
-		</section><!--/.clients-->
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
-		</section><!--/.clients-->
-		<!--clients end -->
+<!-- jQuery & Owl Carousel JS -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<!-- Owl Carousel Initialization -->
+<script>
+$(document).ready(function(){
+  $("#client").owlCarousel({
+      loop:true,
+      margin:30,
+      nav:false,
+      dots:true,
+      autoplay:true,
+      autoplayTimeout:3000,
+      responsive:{
+          0:{ items:1 },
+          600:{ items:3 },
+          1000:{ items:5 }
+      }
+  });
+});
+</script>
+
 
 		<!--contact start -->
 		<section id="contact" class="contact">
