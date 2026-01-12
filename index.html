@@ -71,6 +71,23 @@
 			                    <i class="fa fa-bars"></i>
 			                </button>
 			                <a class="navbar-brand" href="index.html">RIVA</a>
+							.bd-time {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .bd-time {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+}
+							<span id="bd-time" class="bd-time"></span>
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
 
@@ -1108,6 +1125,24 @@
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+		<script>
+function updateBDTime() {
+    const options = {
+        timeZone: 'Asia/Dhaka',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    };
+
+    const now = new Date().toLocaleTimeString('en-US', options);
+    document.getElementById('bd-time').innerHTML = `Bangladesh Time: ${now}`;
+}
+
+updateBDTime();
+setInterval(updateBDTime, 1000);
+</script>
+
         
     </body>
 	
