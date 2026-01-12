@@ -92,6 +92,7 @@
 			    </nav><!--/nav-->
 			    <!-- End Navigation -->
 			</div><!--/.header-area-->
+<div class="bd-time" id="bdTime"></div>
 
 		    <div class="clearfix"></div>
 
@@ -1127,7 +1128,16 @@ updateBDTime();
 setInterval(updateBDTime, 1000);
 </script>
 
-        
+      <script>
+function updateBangladeshTime() {
+    const options = { timeZone: 'Asia/Dhaka', hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    const now = new Intl.DateTimeFormat('en-US', options).format(new Date());
+    document.getElementById('bdTime').textContent = 'Bangladesh Time: ' + now;
+}
+setInterval(updateBangladeshTime, 1000); // updates every second
+updateBangladeshTime(); // initialize immediately
+</script>
+  
     </body>
 	
 </html>
