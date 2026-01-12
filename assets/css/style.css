@@ -182,28 +182,17 @@ nav.navbar.bootsnav {
 /*.nav li*/
 /*========== Navbar Brand: RIVA ==========*/
 .navbar-brand {
-    font-family: 'Great Vibes', cursive; /* Calligraphic font */
-    font-size: 36px;
+    font-family: 'Great Vibes', cursive; /* example signature font */
+    font-size: 28px;
     color: #d92cf9;
-    text-transform: none;
-    text-shadow: 0 0 8px #d92cf9, 0 0 16px #b636ff;
-    animation: pulseGlow 2s infinite alternate;
-    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 5px #d92cf9, 0 0 10px #d92cf9, 0 0 15px #ff6fff;
+    animation: pulse 2s infinite;
 }
 
-@keyframes pulseGlow {
-    0% {
-        text-shadow: 0 0 8px #d92cf9, 0 0 16px #b636ff;
-        transform: scale(1);
-    }
-    50% {
-        text-shadow: 0 0 16px #d92cf9, 0 0 32px #b636ff;
-        transform: scale(1.05);
-    }
-    100% {
-        text-shadow: 0 0 8px #d92cf9, 0 0 16px #b636ff;
-        transform: scale(1);
-    }
+@keyframes pulse {
+    0% { text-shadow: 0 0 5px #d92cf9, 0 0 10px #d92cf9, 0 0 15px #ff6fff; }
+    50% { text-shadow: 0 0 10px #d92cf9, 0 0 20px #d92cf9, 0 0 30px #ff6fff; }
+    100% { text-shadow: 0 0 5px #d92cf9, 0 0 10px #d92cf9, 0 0 15px #ff6fff; }
 }
 
 /*========== Navbar Links ==========*/
@@ -211,7 +200,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    padding: 30px 18px;
+    padding: 20px 15px;
     transition: 0.3s linear;
     color: #6a708e;
 }
