@@ -104,22 +104,28 @@ html,body{
     position: relative;
     z-index: 9999;
 }
-/* Bangladesh time display */
+/* Bangladesh Time in Header */
 .bd-time {
     font-size: 14px;
-    color: #fff;
-    margin-left: 20px;
-    opacity: 0.85;
+    font-weight: 600;
+    color: #d92cf9 !important; /* bright pink for visibility */
+    margin-left: 15px;
+    opacity: 1 !important;       /* ensure fully visible */
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6); /* subtle shadow to pop against background */
 }
 
-@media (max-width: 768px) {
-    .bd-time {
-        display: block;
-        margin-left: 0;
-        margin-top: 5px;
-        font-size: 13px;
-    }
+/* Optional: slightly animate the time */
+@keyframes pulseTime {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
+
+.bd-time {
+    display: inline-block;
+    animation: pulseTime 2s infinite;
+}
+
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
     background-color: #fff;
