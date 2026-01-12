@@ -1141,7 +1141,30 @@ function updateBangladeshTime() {
 setInterval(updateBangladeshTime, 1000); // updates every second
 updateBangladeshTime(); // initialize immediately
 </script>
-  
+  <script>
+function updateBangladeshTime() {
+    const bdTimeElement = document.getElementById('bdTime');
+    if (!bdTimeElement) return;
+
+    const now = new Date();
+
+    // Convert to Bangladesh time (UTC+6)
+    const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+    const bdOffset = 6 * 60 * 60000; // 6 hours in ms
+    const bdTime = new Date(utc + bdOffset);
+
+    // Format: YYYY-MM-DD HH:MM:SS
+    const options = { hour12: false };
+    const formattedTime = bdTime.toLocaleString('en-GB', options);
+
+    bdTimeElement.textContent = formattedTime;
+}
+
+// Update every second
+setInterval(updateBangladeshTime, 1000);
+updateBangladeshTime();
+</script>
+
     </body>
 	
 </html>
