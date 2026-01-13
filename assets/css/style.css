@@ -972,4 +972,46 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+/* ===============================
+   HEADER BRAND + TIME UNIFIED GLOW
+   =============================== */
+
+/* RIVA brand */
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #d92cf9 !important;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px rgba(217, 44, 249, 0.6);
+    animation: glowPulse 2s infinite ease-in-out;
+    padding: 30px 15px;
+}
+
+/* Bangladesh Time */
+.navbar-header .bd-time {
+    font-size: 14px;
+    font-weight: 600;
+    color: #d92cf9 !important;
+    opacity: 1 !important;
+    margin-left: 10px;
+    text-shadow: 0 0 6px rgba(217, 44, 249, 0.6);
+    animation: glowPulse 2s infinite ease-in-out;
+    display: inline-block;
+}
+
+/* Shared glow animation */
+@keyframes glowPulse {
+    0% {
+        text-shadow: 0 0 4px rgba(217, 44, 249, 0.4);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(217, 44, 249, 0.9);
+    }
+    100% {
+        text-shadow: 0 0 4px rgba(217, 44, 249, 0.4);
+    }
+}
+
 /*========================Thank you=================
