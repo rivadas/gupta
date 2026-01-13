@@ -1065,5 +1065,46 @@ nav.navbar.bootsnav.navbar-fixed {
             0 0 24px rgba(214, 44, 249, 0.9);
         transform: scale(1.03);
     }
+/* Brand wrapper positioning */
+.brand-wrapper {
+    position: relative;
+    display: inline-block;
 }
+
+/* Sparkles effect */
+.sparkles {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 120%;
+    height: 120%;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.sparkles::after, .sparkles::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #d92cf9;
+    border-radius: 50%;
+    opacity: 0.8;
+    box-shadow: 0 0 10px #d92cf9, 20px 10px 15px #b636ff, -15px 5px 8px #d92cf9;
+    animation: sparkle 2s linear infinite;
+}
+
+.sparkles::before {
+    animation-delay: 1s;
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+    0%   { transform: translate(0,0) scale(1); opacity:0.5;}
+    25%  { transform: translate(10px,-5px) scale(1.2); opacity:1;}
+    50%  { transform: translate(-5px,10px) scale(0.8); opacity:0.7;}
+    75%  { transform: translate(15px,5px) scale(1.1); opacity:1;}
+    100% { transform: translate(0,0) scale(1); opacity:0.5;}
+}
+
 /*========================Thank you=================
