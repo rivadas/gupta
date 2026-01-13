@@ -1033,5 +1033,11 @@ nav.navbar.bootsnav ul.nav > li.active > a::after {
     width: 60%;
     left: 20%;
 }
+/* Glass Effect Header */
+nav.navbar.bootsnav.navbar-fixed {
+    background: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
 
 /*========================Thank you=================
