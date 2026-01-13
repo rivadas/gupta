@@ -10,15 +10,14 @@
 
         <!--font-family-->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-
+        
         <!-- title of site -->
         <title>Riva-Das-Gupta</title>
 
         <!-- For favicon png -->
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
        
-        <!---awesome.min.css-->
+        <!--font-awesome.min.css-->
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
 		<!--flat icon css-->
@@ -38,11 +37,7 @@
 		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
         
         <!--style.css-->
-        <!-- Calligraphic Font for RIVA -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-<!-- Bootsnav, Bootstrap & Font Awesome should already be included -->
-<link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
@@ -63,57 +58,50 @@
         <![endif]-->
 		
 		<!-- top-area Start -->
-<header class="top-area">
-    <div class="header-area">
-        <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-        <i class="fa fa-bars"></i>
-    </button>
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
 
-    <div class="brand-wrapper">
-        <a class="navbar-brand" href="index.html">RIVA</a>
-        <div class="sparkles"></div> <!-- Sparkles container -->
-    </div>
+			        <div class="container">
 
-    <span id="bd-time" class="bd-time"></span>
-</div>
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">RIVA</a>
+							<span id="bd-time" class="bd-time"></span>
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
 
-                    <span id="bd-time" class="bd-time">
-    <i class="fa fa-clock-o"></i>
-</span>
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                <li class=" smooth-menu active"></li>
+			                    <li class=" smooth-menu"><a href="#education">education</a></li>
+			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
+			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
+			                    <li class="smooth-menu"><a href="#profile">profile</a></li>
+								<li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
+			                    <li class="smooth-menu"><a href="#clients">organization</a></li>
+			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+		<header>
+    <div class="top-area">
+        <div class="header-area">
+            <!-- logo & navbar here -->
+        </div><!-- /.header-area -->
 
-                </div>
-                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-    					<li class="smooth-menu active"><a href="#home">home</a></li>
-                        <li class="smooth-menu"><a href="#education">education</a></li>
-                        <li class="smooth-menu"><a href="#skills">skills</a></li>
-                        <li class="smooth-menu"><a href="#experience">experience</a></li>
-                        <li class="smooth-menu"><a href="#profile">profile</a></li>
-                        <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-                        <li class="smooth-menu dropdown">
-                            <a href="#">Professional Link <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-                                <li><a href="https://scholar.google.com/">Google Scholar</a></li>
-                                <li><a href="https://www.researchgate.net/profile/Riva-Gupta">ResearchGate</a></li>
-                            </ul>
-                        </li>
-                        <li class="smooth-menu"><a href="#clients">organization</a></li>
-						<li class="smooth-menu"><a href="#contact">contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+        <div class="bd-time" id="bdTime"></div> <!-- Bangladesh Time -->
+
+        <div class="clearfix"></div>
+    </div><!-- /.top-area -->
 </header>
-
-<!-- top-area End -->
 	
 		<!--welcome-hero start -->
 		<section id="welcome-hero" class="welcome-hero">
@@ -991,22 +979,7 @@
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
 								<div class="contact-form">
-									<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xgooeyrb"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+									<form>
 										<div class="row">
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
@@ -1137,42 +1110,49 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		
         <!--Custom JS-->
-     <!-- Bangladesh Time -->
-<span id="bd-time" class="bd-time"></span>
+       <script>
+function updateBangladeshTime() {
+    const options = {
+        timeZone: 'Asia/Dhaka',
+        hour12: true,          // true for 12h format, false for 24h
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    };
 
-<script>
-function updateBDTime() {
-    const bdTimeElement = document.getElementById('bd-time');
-    if (!bdTimeElement) return;
-
-const now = new Date().toLocaleTimeString('en-US', { 
-    timeZone: 'Asia/Dhaka', 
-    hour12: true, 
-    hour: '2-digit', 
-    minute: '2-digit', 
-    second: '2-digit' 
-});
-document.getElementById('bd-time').textContent = `Bangladesh Time: ${now}`;
-
-    // Convert to Bangladesh time (UTC+6)
-    const utc = now.getTime() + now.getTimezoneOffset() * 60000;
-    const bdOffset = 6 * 60 * 60000; // 6 hours in ms
-    const bdTime = new Date(utc + bdOffset);
-
-    // Format HH:MM:SS in 24-hour format
-    const hours = bdTime.getHours().toString().padStart(2, '0');
-    const minutes = bdTime.getMinutes().toString().padStart(2, '0');
-    const seconds = bdTime.getSeconds().toString().padStart(2, '0');
-
-    bdTimeElement.textContent = `Bangladesh Time: ${hours}:${minutes}:${seconds}`;
+    const now = new Date().toLocaleTimeString('en-US', options);
+    document.getElementById('bdTime').textContent = "Bangladesh Time: " + now;
 }
 
-// Update every second
-setInterval(updateBDTime, 1000);
-updateBDTime(); // Initialize immediately
+// Initialize and update every second
+updateBangladeshTime();
+setInterval(updateBangladeshTime, 1000);
 </script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-
+<script>
+$(document).ready(function(){
+    $("#client-carousel").owlCarousel({
+        loop:true,
+        margin:30,
+        autoplay:true,
+        autoplayTimeout:2500,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{ items:2 },
+            576:{ items:3 },
+            768:{ items:4 },
+            992:{ items:5 },
+            1200:{ items:6 }
+        }
+    });
+});
+</script>
 
     </body>
 	
