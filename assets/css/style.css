@@ -1041,30 +1041,37 @@ nav.navbar.bootsnav.navbar-fixed {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* subtle highlight */
 }
 /* ===== RIVA Brand Animation (Soft Glow) ===== */
-.navbar-brand {
-    font-family: 'Poppins', sans-serif; /* official & clean */
-    font-size: 26px;
+/* RIVA Glow */
+.brand-wrapper .navbar-brand {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    letter-spacing: 2px;
-    color: #ffffff !important;
-    text-shadow: 0 0 8px rgba(214, 44, 249, 0.6);
-    animation: rivaGlow 2.5s ease-in-out infinite alternate;
+    font-size: 28px;
+    color: #d92cf9;
+    text-shadow: 0 0 8px rgba(217,44,249,0.8);
+    animation: pulse 2s infinite;
 }
 
-/* Glow animation */
-@keyframes rivaGlow {
-    0% {
-        text-shadow:
-            0 0 6px rgba(214, 44, 249, 0.4),
-            0 0 12px rgba(214, 44, 249, 0.4);
-        transform: scale(1);
-    }
-    100% {
-        text-shadow:
-            0 0 12px rgba(214, 44, 249, 0.8),
-            0 0 24px rgba(214, 44, 249, 0.9);
-        transform: scale(1.03);
-    }
+@keyframes pulse {
+    0% { text-shadow: 0 0 5px rgba(217,44,249,0.7); }
+    50% { text-shadow: 0 0 15px rgba(217,44,249,1); }
+    100% { text-shadow: 0 0 5px rgba(217,44,249,0.7); }
+}
+
+/* Bangladesh Time */
+.bd-time {
+    color: #d92cf9;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 15px;
+    text-shadow: 0 0 5px rgba(217,44,249,0.8);
+}
+
+/* Dropdown spacing fix */
+nav.navbar.bootsnav ul.nav > li.dropdown > .dropdown-menu {
+    margin-top: 0;
+    background: rgba(255,255,255,0.95);
+}
+
 /* Brand wrapper positioning */
 .brand-wrapper {
     position: relative;
