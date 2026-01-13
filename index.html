@@ -1145,7 +1145,14 @@ function updateBDTime() {
     const bdTimeElement = document.getElementById('bd-time');
     if (!bdTimeElement) return;
 
-    const now = new Date();
+const now = new Date().toLocaleTimeString('en-US', { 
+    timeZone: 'Asia/Dhaka', 
+    hour12: true, 
+    hour: '2-digit', 
+    minute: '2-digit', 
+    second: '2-digit' 
+});
+document.getElementById('bd-time').textContent = `Bangladesh Time: ${now}`;
 
     // Convert to Bangladesh time (UTC+6)
     const utc = now.getTime() + now.getTimezoneOffset() * 60000;
