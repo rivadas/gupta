@@ -1180,17 +1180,34 @@ $(document).ready(function(){
     });
 });
 </script>
+<!-- Bangladesh Time -->
+<span id="bd-time" class="bd-time"></span>
+
 <script>
-function updateBangladeshTime() {
-    const options = { timeZone: 'Asia/Dhaka', hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit' };
-    const now = new Intl.DateTimeFormat('en-US', options).format(new Date());
+function updateBDTime() {
     const bdTimeElement = document.getElementById('bd-time');
-    if(bdTimeElement) bdTimeElement.textContent = 'Bangladesh Time: ' + now;
+    if (!bdTimeElement) return;
+
+    const now = new Date();
+
+    // Convert to Bangladesh time (UTC+6)
+    const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+    const bdOffset = 6 * 60 * 60000; // 6 hours in ms
+    const bdTime = new Date(utc + bdOffset);
+
+    // Format HH:MM:SS in 24-hour format
+    const hours = bdTime.getHours().toString().padStart(2, '0');
+    const minutes = bdTime.getMinutes().toString().padStart(2, '0');
+    const seconds = bdTime.getSeconds().toString().padStart(2, '0');
+
+    bdTimeElement.textContent = `Bangladesh Time: ${hours}:${minutes}:${seconds}`;
 }
 
-setInterval(updateBangladeshTime, 1000); // updates every second
-updateBangladeshTime(); // initialize immediately
+// Update every second
+setInterval(updateBDTime, 1000);
+updateBDTime(); // Initialize immediately
 </script>
+
 
     </body>
 	
