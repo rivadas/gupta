@@ -1040,5 +1040,30 @@ nav.navbar.bootsnav.navbar-fixed {
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* subtle highlight */
 }
+/* ===== RIVA Brand Animation (Soft Glow) ===== */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif; /* official & clean */
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff !important;
+    text-shadow: 0 0 8px rgba(214, 44, 249, 0.6);
+    animation: rivaGlow 2.5s ease-in-out infinite alternate;
+}
 
+/* Glow animation */
+@keyframes rivaGlow {
+    0% {
+        text-shadow:
+            0 0 6px rgba(214, 44, 249, 0.4),
+            0 0 12px rgba(214, 44, 249, 0.4);
+        transform: scale(1);
+    }
+    100% {
+        text-shadow:
+            0 0 12px rgba(214, 44, 249, 0.8),
+            0 0 24px rgba(214, 44, 249, 0.9);
+        transform: scale(1.03);
+    }
+}
 /*========================Thank you=================
