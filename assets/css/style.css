@@ -1057,38 +1057,6 @@ nav.navbar.bootsnav.navbar-fixed {
     100% { text-shadow: 0 0 5px rgba(217,44,249,0.7); }
 }
 
-/* Bangladesh Time */
-.bd-time {
-    color: #d92cf9;
-    font-weight: 600;
-    font-size: 16px;
-    text-shadow: 0 0 5px rgba(217,44,249,0.8);
-}
-
-/* Absolute positioning at right of navbar */
-.bd-time-container {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 999;
-}
-
-.brand-wrapper .navbar-brand {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    color: #d92cf9;
-    text-shadow: 0 0 8px rgba(217,44,249,0.8);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { text-shadow: 0 0 5px rgba(217,44,249,0.7); }
-    50% { text-shadow: 0 0 15px rgba(217,44,249,1); }
-    100% { text-shadow: 0 0 5px rgba(217,44,249,0.7); }
-}
-
 /* Dropdown spacing fix */
 nav.navbar.bootsnav ul.nav > li.dropdown > .dropdown-menu {
     margin-top: 0;
@@ -1135,6 +1103,22 @@ nav.navbar.bootsnav ul.nav > li.dropdown > .dropdown-menu {
     50%  { transform: translate(-5px,10px) scale(0.8); opacity:0.7;}
     75%  { transform: translate(15px,5px) scale(1.1); opacity:1;}
     100% { transform: translate(0,0) scale(1); opacity:0.5;}
+}
+/* Fix positioning for Bangladesh Time in bootsnav */
+.bd-time-container {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-weight: 500;
+    color: #d92cf9 !important;
+}
+
+/* Optional glow style (same as RIVA) */
+.bd-time {
+    text-shadow: 0 0 5px rgba(217,44,249,0.7);
+    font-weight: 600;
 }
 
 /*========================Thank you=================
