@@ -1212,6 +1212,32 @@ $(document).ready(function(){
     });
 });
 </script>
+<script>
+function updateBDTime() {
+    const now = new Date();
+
+    // Convert to Bangladesh time (UTC+6)
+    const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+    const bdOffset = 6 * 60 * 60000; // +6 hours
+    const bdTime = new Date(utc + bdOffset);
+
+    // Format HH:MM:SS AM/PM
+    let hours = bdTime.getHours();
+    const minutes = bdTime.getMinutes();
+    const seconds = bdTime.getSeconds();
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // 0 becomes 12
+
+    const formattedTime = `${hours.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')} ${ampm}`;
+
+    document.getElementById('bd-time').textContent = 'Bangladesh Time: ' + formattedTime;
+}
+
+// Initialize and update every second
+updateBDTime();
+setInterval(updateBDTime, 1000);
+</script>
 
     </body>
 	
