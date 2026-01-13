@@ -1035,7 +1035,7 @@ nav.navbar.bootsnav ul.nav > li.active > a::after {
 }
 /* Lighter Glass Header Effect */
 nav.navbar.bootsnav.navbar-fixed {
-    background: rgba(255, 255, 255, 0.1) !important; /* lighter tint */
+    background: rgba(255, 255, 255, 0.10) !important; /* lighter tint */
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* subtle highlight */
